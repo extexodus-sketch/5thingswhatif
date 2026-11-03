@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="5 things that would happen if... Researched what-ifs, told in about a minute.">
+<meta property="og:title" content="5 Things (@5thingswhatif)">
+<meta property="og:description" content="5 things that would happen if... Watch on Facebook, YouTube, TikTok and Instagram.">
+<meta property="og:image" content="https://extexodus-sketch.github.io/5thingswhatif/backdrop.jpg">
+<meta property="og:url" content="https://extexodus-sketch.github.io/5thingswhatif/">
+<meta name="theme-color" content="#0c1118">
+<title>5 Things Links</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=TikTok+Sans:wght@500;600;700&display=swap">
+<style>
+/* Layout: one phone-width column. The channel's golden-hour / abyss street fades into night ink,
+   the wordmark sits on the seam, four platform links stack below. Single dark look on purpose (the brand world). */
+:root {
+  --ink: #0c1118;        /* night under the abyss sky */
+  --panel: #161d26;      /* link rows */
+  --panel-hi: #1f2a36;
+  --line: #2a3644;
+  --cream: #fff4e2;      /* wordmark cream */
+  --muted: #b9b0a3;
+  --gold: #ffd6a0;       /* handle colour on the channel art */
+  --red: #c63a32;        /* hoodie red */
+  --display: "Anton", "Impact", "Arial Narrow", sans-serif;
+  --body: "TikTok Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { padding-block: env(safe-area-inset-top, 0px) env(safe-area-inset-bottom, 0px); background: var(--ink); }
+body { margin: 0; }
+img { max-width: 100%; }
+body {
+  background: var(--ink);
+  color: var(--cream);
+  font-family: var(--body);
+  font-size: 16px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+.page {
+  max-width: 480px;
+  margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 40px;
+}
+.hero {
+  position: relative;
+  margin-inline: calc(-1 * max(16px, env(safe-area-inset-left, 0px)));
+  aspect-ratio: 900 / 700;
+  max-width: calc(100% + 32px);
+  overflow: hidden;
+}
+.hero img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: 45% 30%;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(12, 17, 24, 0) 52%, rgba(12, 17, 24, .75) 80%, var(--ink) 100%);
+}
+.brand {
+  position: relative;
+  margin-top: -64px;
+  display: grid;
+  gap: 6px;
+  justify-items: start;
+}
+.wordmark {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(56px, 17vw, 76px);
+  line-height: .95;
+  letter-spacing: .01em;
+  text-shadow: 0 3px 14px rgba(0, 0, 0, .55);
+}
+.wordmark .five {
+  color: var(--red);
+  -webkit-text-stroke: 2px var(--cream);
+  paint-order: stroke fill;
+}
+.bar { width: 100%; max-width: 300px; height: 5px; background: var(--red); }
+.tagline { margin: 4px 0 0; font-size: 18px; font-weight: 600; text-wrap: balance; }
+.handle { margin: 0; font-size: 15px; font-weight: 700; color: var(--gold); }
+
+.links { list-style: none; margin: 28px 0 0; padding: 0; display: grid; gap: 12px; }
+.links a {
+  display: grid;
+  grid-template-columns: 44px 1fr auto;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px 14px 14px;
+  min-height: 72px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  color: var(--cream);
+  text-decoration: none;
+  transition: background .15s, border-color .15s, transform .15s;
+}
+.links a:hover { background: var(--panel-hi); border-color: var(--red); transform: translateY(-1px); }
+.links a:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+.icon {
+  width: 44px; height: 44px;
+  border-radius: 11px;
+  display: grid; place-items: center;
+  background: var(--red);
+  color: var(--cream);
+}
+.icon svg { width: 24px; height: 24px; }
+.label { min-width: 0; display: grid; }
+.label b { font-size: 17px; font-weight: 700; }
+.label span { font-size: 14px; color: var(--muted); }
+.arrow { color: var(--muted); font-size: 20px; }
+
+.foot { margin-top: 32px; font-size: 14px; color: var(--muted); text-align: center; }
+@media (prefers-reduced-motion: reduce) { .links a { transition: none; } .links a:hover { transform: none; } }
+</style>
+</head>
+<body>
+
+<main class="page">
+  <div class="hero">
+    <img src="backdrop.jpg" alt="Hoodie Guy standing on a road where a golden-hour sky turns into a deep blue night">
+  </div>
+
+  <header class="brand">
+    <h1 class="wordmark"><span class="five">5</span> THINGS</h1>
+    <div class="bar" aria-hidden="true"></div>
+    <p class="tagline">5 things that would happen if&hellip;</p>
+    <p class="handle">@5thingswhatif</p>
+  </header>
+
+  <ul class="links">
+    <li>
+      <a href="https://www.facebook.com/5thingswhatif" target="_blank" rel="noopener">
+        <span class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.6-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.9v3h2.6V21h3z"/></svg>
+        </span>
+        <span class="label"><b>Facebook</b><span>Every episode, first</span></span>
+        <span class="arrow" aria-hidden="true">&rsaquo;</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/@5thingswhatif" target="_blank" rel="noopener">
+        <span class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5.2 3L10 15z"/></svg>
+        </span>
+        <span class="label"><b>YouTube</b><span>Shorts and longer deep dives</span></span>
+        <span class="arrow" aria-hidden="true">&rsaquo;</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.tiktok.com/@5thingswhatif" target="_blank" rel="noopener">
+        <span class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 3c.4 2.1 1.7 3.6 3.9 3.8v3.1c-1.4.1-2.7-.3-3.9-1.1v5.9c0 3.4-2.5 5.8-5.6 5.8a5.5 5.5 0 0 1-5.5-5.6c0-3.5 3-6 6.5-5.4v3.2c-1.7-.4-3.4.6-3.4 2.3 0 1.4 1.1 2.4 2.4 2.4 1.5 0 2.5-1 2.5-2.9V3h3.1z"/></svg>
+        </span>
+        <span class="label"><b>TikTok</b><span>New what-ifs every day</span></span>
+        <span class="arrow" aria-hidden="true">&rsaquo;</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/5thingswhatif/" target="_blank" rel="noopener">
+        <span class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+        </span>
+        <span class="label"><b>Instagram</b><span>Reels</span></span>
+        <span class="arrow" aria-hidden="true">&rsaquo;</span>
+      </a>
+    </li>
+  </ul>
+
+  <p class="foot">Researched what-ifs, told in about a minute.</p>
+</main>
+</body>
+</html>
